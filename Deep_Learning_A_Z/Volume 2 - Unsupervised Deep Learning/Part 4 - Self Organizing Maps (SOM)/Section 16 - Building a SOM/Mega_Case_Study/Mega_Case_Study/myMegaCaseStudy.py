@@ -1,10 +1,8 @@
-# Mega Case Study - Make a Hybrid Deep Learning Model
+# -*- coding: utf-8 -*-
 
+#hybrid deep learning model
 
-
-# Part 1 - Identify the Frauds with the Self-Organizing Map
-
-# Import the libraries
+#part 1 identify teh faruds with the SOM
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -43,25 +41,30 @@ for i, x in enumerate(X):
          markeredgewidth = 2)
 show()
 
-# Finding the frauds
+#find the frauds
 mappings = som.win_map(X)
-frauds = np.concatenate((mappings[(5,3)], mappings[(8,3)]), axis = 0)
-frauds = sc.inverse_transform(frauds)
+#TODO: you need to manuall modify the coordinates of mappings[(4,3)], mappings[(8,4)] by looking at the som visual figure
+potentialFrauds = np.concatenate((mappings[(4,3)], mappings[(8,4)]), axis = 0)
+#unscale the elements of all customers
+unscaledPotentialFrauds = sc.inverse_transform(potentialFrauds)
 
+####################################################
+#part 2 go from unsupervised to supervised learning
+####################################################
 
+#create the matrix of features (indepependent variable)
+#the customer ID wont help detecting faruds, but the approval descision may help
+customers = dataset.iloc[:, :-1].values
 
-# Part 2 - Going from Unsupervised to Supervised Deep Learning
-
-# Creating the matrix of features
-customers = dataset.iloc[:, 1:].values
-
-# Creating the dependent variable
+#create the dependent variables
 is_fraud = np.zeros(len(dataset))
 for i in range(len(dataset)):
-    if dataset.iloc[i,0] in frauds:
+    if dataset.iloc[i, 0 ] in unscaledPotentialFrauds:
         is_fraud[i] = 1
 
-# Feature Scaling
+
+#train the ANN
+#feature scaling
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 customers = sc.fit_transform(customers)
@@ -76,7 +79,11 @@ from keras.layers import Dense
 classifier = Sequential()
 
 # Adding the input layer and the first hidden layer
-classifier.add(Dense(units = 2, kernel_initializer = 'uniform', activation = 'relu', input_dim = 15))
+classifier.add(Dense(units = 6, kernel_initializer = 'uniform', activation = 'relu', input_dim = 15))
+
+#this layer was omitted just for simplicity 
+## Adding the second hidden layer
+#classifier.add(Dense(units = 6, kernel_initializer = 'uniform', activation = 'relu'))
 
 # Adding the output layer
 classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'sigmoid'))
@@ -85,9 +92,16 @@ classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'si
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
 # Fitting the ANN to the Training set
+#the numbers of dataset (690) and the features (15) are small for ANN, we do not need so many epochs 
 classifier.fit(customers, is_fraud, batch_size = 1, epochs = 2)
 
-# Predicting the probabilities of frauds
+# Predict the Test set results
 y_pred = classifier.predict(customers)
+#y_pred is originally a two dimentional array
 y_pred = np.concatenate((dataset.iloc[:, 0:1].values, y_pred), axis = 1)
-y_pred = y_pred[y_pred[:, 1].argsort()]
+#sort by the probability
+y_pred_sorted = y_pred[y_pred[:, 1].argsort()]
+
+
+
+
