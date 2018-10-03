@@ -13,10 +13,10 @@ All the code I wrote in this course is in my another anonymous account. Please c
 The overview of this course is available at https://www.udemy.com/deeplearning/learn/v4/overview.
 The course detail is available at https://www.udemy.com/deeplearning/learn/v4/content.
 
-
-
+![image](./scope.PNG)
 
 ## Certificate of Completion
+![image](./certificateOfCompletion.jpg)
 
 
 
