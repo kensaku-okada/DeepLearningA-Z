@@ -8,9 +8,9 @@ Deep Learning A-Z course at Udemy (https://www.udemy.com/deeplearning/learn/v4/o
 - Restricted Boltzmann Machine, 
 - Auto Encoders
 
-All the code I wrote in this course is in my another anonymous account. Please contact me if you would like to see it.
+All the source code I wrote in this course and the data files are in my anonymous account. Please contact me if you would like to see them.
 
-The overview of this course is available at https://www.udemy.com/deeplearning/learn/v4/overview.
+The overview of this course is available at https://www.udemy.com/deeplearning/learn/v4/overview.  
 The course detail is available at https://www.udemy.com/deeplearning/learn/v4/content.
 
 ![image](./scope.PNG)
