@@ -11,11 +11,11 @@ Deep Learning A-Z course at Udemy (https://www.udemy.com/deeplearning/learn/v4/o
 All the source code I wrote in this course and the data files are available in the following links.
 
 - (Basic) Artificial Neural Network (ANN) : https://nbviewer.jupyter.org/github/kensaku-okada/DeepLearningA-Z/blob/master/deepNNMain/Volume%201%20-%20Supervised%20Deep%20Learning/Part%201%20-%20Artificial%20Neural%20Networks%20%28ANN%29/Section%204%20-%20Building%20an%20ANN/myAnn.ipynb
-- CNN : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/398f65039ae97c5cd8e357dc3af13592
-- RNN : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/87eba08ce71c03eaf9ee3f60f9f38e89
-- Self Organizing Map (SOM) : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/2785854ec556a162243fab8ab6e228db
-- Restricted Boltzmann Machine (RBM): http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/e285868e9c4f3acecab48c3b0d77449a
-- Auto Encoder : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/91fdaf2010d2fd487ea28bd5441b7342
+- CNN : https://nbviewer.jupyter.org/github/kensaku-okada/DeepLearningA-Z/blob/master/deepNNMain/Volume%201%20-%20Supervised%20Deep%20Learning/Part%202%20-%20Convolutional%20Neural%20Networks%20%28CNN%29/Section%208%20-%20Building%20a%20CNN/myCNN.ipynb
+- RNN : https://nbviewer.jupyter.org/github/kensaku-okada/DeepLearningA-Z/blob/master/deepNNMain/Volume%201%20-%20Supervised%20Deep%20Learning/Part%203%20-%20Recurrent%20Neural%20Networks%20%28RNN%29/Section%2012%20-%20Building%20a%20RNN/myRNN.ipynb
+- Self Organizing Map (SOM) : https://nbviewer.jupyter.org/github/kensaku-okada/DeepLearningA-Z/blob/master/deepNNMain/Volume%202%20-%20Unsupervised%20Deep%20Learning/Part%204%20-%20Self%20Organizing%20Maps%20%28SOM%29/Section%2016%20-%20Building%20a%20SOM/Self_Organizing_Maps/mySom.ipynb
+- Restricted Boltzmann Machine (RBM): https://nbviewer.jupyter.org/github/kensaku-okada/DeepLearningA-Z/blob/master/deepNNMain/Volume%202%20-%20Unsupervised%20Deep%20Learning/Part%205%20-%20Boltzmann%20Machines%20%28BM%29/Section%2019%20-%20Building%20a%20Boltzmann%20Machine/myRestrictedBoltzmannMachine%20-%20uploaded.ipynb
+- Auto Encoder : https://nbviewer.jupyter.org/github/kensaku-okada/DeepLearningA-Z/blob/master/deepNNMain/Volume%202%20-%20Unsupervised%20Deep%20Learning/Part%206%20-%20AutoEncoders%20%28AE%29/Section%2022%20-%20Building%20an%20AutoEncoder/myAutoEncoder.ipynb
 
 The overview of this course is available at https://www.udemy.com/deeplearning/learn/v4/overview.  
 The course detail is available at https://www.udemy.com/deeplearning/learn/v4/content.
