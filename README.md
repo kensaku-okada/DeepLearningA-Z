@@ -8,16 +8,20 @@ Deep Learning A-Z course at Udemy (https://www.udemy.com/deeplearning/learn/v4/o
 - Restricted Boltzmann Machine, 
 - Auto Encoders
 
-All the source code I wrote in this course and the data files are in my anonymous account. Please contact me if you would like to see them.
+All the source code I wrote in this course and the data files are available in the following links.
+
+- (Basic) Artificial Neural Network (ANN) : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/da28905f6778c88d27e7b7698bd8a6ec
+- CNN : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/398f65039ae97c5cd8e357dc3af13592
+- RNN : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/87eba08ce71c03eaf9ee3f60f9f38e89
+- Self Organizing Map (SOM) : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/2785854ec556a162243fab8ab6e228db
+- Restricted Boltzmann Machine (RBM): http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/e285868e9c4f3acecab48c3b0d77449a
+- Auto Encoder : http://nbviewer.jupyter.org/gist/p1c0sovm9DfTaw/91fdaf2010d2fd487ea28bd5441b7342
 
 The overview of this course is available at https://www.udemy.com/deeplearning/learn/v4/overview.  
 The course detail is available at https://www.udemy.com/deeplearning/learn/v4/content.
 
 ![image](./scope.PNG)
 
-## Certificate of Completion
+# Certificate of Completion
 ![image](./certificateOfCompletion.jpg)
-
-
-
 
